@@ -136,8 +136,8 @@ console.log(open)
               </div>
               <div className="burger-wrapper" id="burger-wrapper">
                   <div className="burger-wrapper-item " >
-                      <div className="burger-items"> </div>
-                      <div className="burger-items"> </div>
+                      <div className="burger-items s"> </div>
+                      <div className="burger-items s"> </div>
                       <div className="burger-items"> </div>
                   </div>
               </div>
