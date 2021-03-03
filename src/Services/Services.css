@@ -1,0 +1,149 @@
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+.wrapper-services {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: lightgrey;
+}
+
+.one, .two, .three {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 70px 0;
+  background-color: whitesmoke;
+  justify-content: space-evenly;
+  border: 2px solid lightgrey;
+}
+
+.one, .two {
+  margin-right: 10px;
+}
+
+.two, .three {
+  margin-left: 10px;
+}
+
+.services-h1 {
+  margin-top: 30px;
+  font-size: 25px;
+  color: purple;
+}
+
+.services-h2 {
+  margin-top: 30px;
+  font-size: 25px;
+  color: blue;
+}
+
+.services-h3 {
+  margin-top: 30px;
+  font-size: 25px;
+  color: palegreen;
+}
+
+.services-description {
+  width: 50%;
+  text-align: center;
+  display: inline-flex;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.button-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  width: 35%;
+  padding: 10px 0;
+}
+
+.services {
+  width: 100%;
+}
+
+.t {
+  background-color: blue;
+  border: 0;
+  color: white;
+}
+.t:hover {
+  background-color: #0e0e0e;
+}
+
+.th {
+  background-color: palegreen;
+  border: none;
+  color: white;
+}
+.th:hover {
+  background-color: #0e0e0e;
+}
+
+.o {
+  background-color: purple;
+  border: none;
+  color: white;
+}
+.o:hover {
+  background-color: #0e0e0e;
+}
+
+.o, .t, .th {
+  transition: 300ms ease-in-out;
+}
+
+.one:hover {
+  border: 2px solid purple;
+}
+
+.two:hover {
+  border: 2px solid blue;
+}
+
+.three:hover {
+  border: 2px solid palegreen;
+}
+
+.one, .two, .three {
+  transition: 300ms ease-in-out;
+}
+
+.services-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+.banner-img {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+/*# sourceMappingURL=Services.css.map */

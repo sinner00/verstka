@@ -1,0 +1,61 @@
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+.sea-wrapper {
+  background-image: url("../Image/sea.jpg");
+  width: 100%;
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.sea-item {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 25%;
+}
+
+.sea-card-image {
+  padding-bottom: 15px;
+}
+
+.sea-card {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: limegreen;
+}
+.sea-card:nth-child(3) {
+  font-size: 50px;
+  color: white;
+  background-color: limegreen;
+  width: fit-content;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.button-card {
+  width: 11rem;
+  height: 3rem;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+.button-card:hover {
+  background-color: #0e0e0e;
+}
+
+/*# sourceMappingURL=Footer.css.map */

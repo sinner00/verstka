@@ -1,0 +1,107 @@
+@import "../app";
+.footer-wrapper-container {
+  @include display-flex;
+  background-color: purple;
+  padding: 50px 0;
+}
+.footer-p {
+  color: white;
+}
+.footer-produced {
+  color: white;
+}
+.footer-wrapper {
+
+  @include display-block;
+  width: auto;
+
+}
+.wrapper-links-items{
+  @include display-flex;
+  padding-bottom: 50px;
+}
+.footer-links, .footer-links2, .footer-links3  {
+  @include display-block;
+  position: relative;
+  background-color: lightgrey;
+  &:hover{
+    .one-s,.one-s2,.one-s3{
+      transform: translateY(-45px);
+      visibility: visible;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+
+    }
+
+    .two-s, .two-s2, .two-s3{
+       transform: translateY(-45px);
+      z-index: 6;
+      opacity: 1;
+      cursor: pointer;
+      visibility: visible;
+      height: 0;
+    }
+    .three-s, .three-s2, .three-s3{
+      opacity: 1;
+      background-color: yellow;
+      cursor: pointer;
+    }
+  }
+}
+
+.one-s, .one-s2, .one-s3{
+position: absolute;
+  z-index: 6;
+  visibility: visible;
+  border-radius: 50%;
+  font-size: 23px;
+  transition:  200ms ease-in-out;
+  opacity: 0.4;
+  color: purple;
+  height: 0;
+  border: none;
+  outline: 0;
+
+}
+.two-s,.two-s2, .two-s3,{
+
+  position: absolute;
+  transition:  200ms ease-in-out;
+  border-radius: 50%;
+  font-size: 23px;
+  top: 45px;
+  opacity: 0;
+  color: purple;
+  visibility: hidden;
+  height: 0;
+  border: none;
+  outline: 0;
+}
+.three-s , .three-s2, .three-s3{
+  width: 35px;
+  position: absolute;
+  height: 35px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: 500ms ease-in-out;
+
+
+}
+.footer-links {
+  text-align: right;
+}
+.footer-links3 {
+  text-align: left;
+}
+.tw {
+  right: -30px;
+}
+.f{
+  right: 47px;
+}
+.i{
+  left: 6px;
+}
+

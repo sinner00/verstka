@@ -1,0 +1,14 @@
+@import "../app";
+.quantity-procedures {
+  @include display-flex;
+  background-color: purple;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+.number-procedure {
+  font-size: 30px;
+  color: limegreen;
+}
+.name-procedure {
+  color: white;
+}

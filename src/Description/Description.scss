@@ -1,0 +1,58 @@
+@import "../app";
+
+.description-wrapper {
+  @include display-flex;
+  align-items: start;
+  padding-top: 70px;
+  justify-content: space-evenly;
+  padding-bottom: 70px;
+}
+.left-side-description {
+  @include display-block;
+  text-align: start;
+  width: 60%;
+  padding-right: 40px;
+}
+.left-side-items2 {
+  @include display-flex;
+  &:nth-child(1){
+    padding-right: 20px;
+  }
+}
+.left-side-items2{
+  text-align: start;
+}
+.container-wrapper {
+  @include display-block;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.left-side-item1 {
+  font-size: 30px;
+
+}
+.right-side-wrapper {
+  @include display-block;
+  text-align: start;
+}
+.wrapper-item {
+  @include display-flex;
+  justify-content: start;
+  text-align: start;
+}
+.right-side-p {
+ width: 100%;
+}
+.right-side-wrapper{
+  width: auto;
+}
+.bi-alarm {
+  font-size: 20px;
+  padding-right: 15px;
+}
+.right-side-name {
+  font-size: 20px;
+}
+.wrapper-item{
+  align-items: baseline;
+}
