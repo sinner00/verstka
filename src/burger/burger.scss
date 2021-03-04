@@ -81,13 +81,10 @@
 
 }
 .second-lvl-wrapper1{
-  padding: 0;
-  position: absolute;
-  top: 62px;
-  color: black;
-  width: 10%;
-  z-index: 10;
-
+@include display-block;
+  justify-content: start;
+  text-align: start;
+  color: white;
 
 }
 .second-lvl{
@@ -142,12 +139,46 @@
 .two-b{
   display: block;
 }
-.ababa{
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  position: relative;
+.second-lvl1 {
+  @include display-block;
+  width: fit-content;
+}
+.first-lvl1 {
+@include display-block;
+  width: fit-content;
+}
+.burger-wrapper{
+  @include display-block;
+  background-color: purple;
+
+}
+.ul-list-burger{
+  @include display-block;
+  margin: 0;
+}
+.first-lvl1-item-name{
+  color: white;
+  margin-bottom: 0;
+  text-align: start;
+  &:hover {
+    color: limegreen;
+    cursor: pointer;
+  }
+}
+.first-lvl1:nth-child(4){
+   .first-lvl1-item-name{
+       color: limegreen;
+
+   }
+}
+.second-lvl1{
+  &:hover{
+    color: limegreen;
+  }
 }
 .second-lvl-wrapper1{
-  position: absolute;
+  padding-left: 0;
+}
+.second-lvl-wrapper1{
+  padding-left: 20px;
 }

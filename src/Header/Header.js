@@ -85,26 +85,28 @@ function  Header() {
 
 
     return (
-        <div className="header">
-          <div className="img-wrapper">
-              <img src={index1} alt="logo" className="header-img"/>
-              <div className="ul-wrapper">
-                  <ul className="ul">
-                      {li}
-                  </ul>
-              </div>
-              <div className="burger-wrapper" id="burger-wrapper">
-                  <div className="burger-wrapper-item " >
-                      <div className="burger-items"> </div>
-                      <div className="burger-items"> </div>
-                      <div className="burger-items"> </div>
-                  </div>
-              </div>
-              <Burger/>
-          </div>
+       <div className="header-wrapper">
+           <div className="header">
+               <div className="img-wrapper">
+                   <img src={index1} alt="logo" className="header-img"/>
+                   <div className="ul-wrapper">
+                       <ul className="ul">
+                           {li}
+                       </ul>
+                   </div>
+                   <div className="burger-wrapper" id="burger-wrapper">
+                       <div className="burger-wrapper-item " >
+                           <div className="burger-items"> </div>
+                           <div className="burger-items"> </div>
+                           <div className="burger-items"> </div>
+                       </div>
+                   </div>
+               </div>
 
 
-        </div>
+           </div>
+           <Burger/>
+       </div>
     );
 }
 
