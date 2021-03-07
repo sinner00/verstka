@@ -1,8 +1,5 @@
 @import "../app";
-.header-img {
-  width: 13%;
-  height: 100%;
-}
+
 .header{
   @include display-block;
   background-color: purple;
@@ -141,7 +138,9 @@
 }
 .second-lvl1 {
   @include display-block;
-  width: fit-content;
+  width: 100%;
+  visibility: visible;
+  transition: height 2s;
 }
 .first-lvl1 {
 @include display-block;
@@ -169,6 +168,8 @@
    .first-lvl1-item-name{
        color: limegreen;
 
+
+
    }
 }
 .second-lvl1{
@@ -181,4 +182,7 @@
 }
 .second-lvl-wrapper1{
   padding-left: 20px;
+}
+.hj {
+  @include display-block;
 }

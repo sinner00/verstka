@@ -99,3 +99,8 @@ transition: 300ms ease-in-out;
   width: 100%;
   margin-bottom: 70px;
 }
+@media screen and (max-width: 770px){
+.services-items{
+  display: block;
+}
+}

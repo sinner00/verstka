@@ -105,4 +105,10 @@
   transition: width 0.2s;
 }
 
-/*# sourceMappingURL=Footer.css.map */
+@media screen and (max-width: 770px) {
+  .feedback-images-wrapper {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=FeedBack.css.map */

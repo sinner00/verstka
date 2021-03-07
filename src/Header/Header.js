@@ -5,7 +5,29 @@ import Burger from "../burger/burger";
 
 function  Header() {
 
+    const style = {
 
+         visibilit: {
+             maxHeight: "50rem",
+             width: "100%",
+             transition:"max-height 400ms ease-in-out",
+         },
+        hidd :{
+
+
+                overflow:"hidden",
+
+                maxHeight:"0",
+                width:"100%",
+                transition:"max-height 400ms ease-in-out"
+
+        }
+    }
+
+
+
+const [op, setOp] = (useState(false));
+const isOp = ()=> setOp(!op);
 
     const list = [
         {
@@ -95,7 +117,7 @@ function  Header() {
                        </ul>
                    </div>
                    <div className="burger-wrapper" id="burger-wrapper">
-                       <div className="burger-wrapper-item " >
+                       <div className="burger-wrapper-item " onClick={isOp} >
                            <div className="burger-items"> </div>
                            <div className="burger-items"> </div>
                            <div className="burger-items"> </div>
@@ -105,7 +127,9 @@ function  Header() {
 
 
            </div>
-           <Burger/>
+           <div className="burger-component-wrapper">
+               <Burger op={op} style={style} />
+           </div>
        </div>
     );
 }

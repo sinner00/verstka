@@ -90,4 +90,22 @@
   padding-top: 10px;
 }
 
-/*# sourceMappingURL=GiftCard.css.map */
+@media screen and (max-width: 770px) {
+  .photos-wrapper {
+    display: block;
+  }
+
+  .photos-items-left {
+    width: 100%;
+  }
+
+  .photos-wrapper-images {
+    display: block;
+  }
+
+  .photos {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Photos.css.map */

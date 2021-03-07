@@ -25,7 +25,7 @@
   text-align: center;
   width: 100%;
   text-align: start;
-  width: 60%;
+  width: 100%;
   padding-right: 40px;
 }
 
@@ -100,4 +100,17 @@
   align-items: baseline;
 }
 
-/*# sourceMappingURL=QuantityProcedures.css.map */
+@media screen and (max-width: 770px) {
+  .description-wrapper {
+    display: block;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .left-side-items2 {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=Description.css.map */

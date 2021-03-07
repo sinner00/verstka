@@ -5,7 +5,7 @@ function  Description() {
 
     return (
       <div className="container-wrapper">
-          <div className="description-wrapper container">
+          <div className="description-wrapper container ">
               <div className="left-side-description ">
                   <div className="left-side-items1">
                       <p className="left-side-item1">

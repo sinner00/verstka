@@ -1,7 +1,8 @@
 @import "../app";
 .header-img {
-  width: 13%;
+  max-width:100% ;
   height: 100%;
+  padding: 0 10px;
 }
 .header{
   @include display-block;
@@ -156,5 +157,59 @@
 .second-lvl-item1 {
   padding-left: 5px;
   transition: 300ms ease-in-out;
+}
+
+.burger-items {
+  width: 1.5rem;
+  padding-bottom: 4px;
+  background-color: #0e0e0e;
+  margin-bottom: 1px;
+}
+.header-wrapper {
+  @include display-block;
+  height: 100%;
+  padding: 0 10px;
+  background-color: purple;
+}
+.burger-wrapper-main {
+  height: 100%;
+  width: 100%;
+}
+.burger-component-wrapper{
+  display: none;
+}
+
+
+.burger-wrapper {
+  display: none!important;
+  .burger-wrapper-item {
+    display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+  .burger-wrapper{
+    display: block!important;
+    text-align: -webkit-right;
+    justify-content: right!important;
+
+
+    .burger-wrapper-item{
+      display: block;
+      padding: 20px 0;
+      text-align: -webkit-right;
+    }
+  }
+}
+@media screen and (max-width: 770px) {
+  .ul-wrapper{
+    display: none!important;
+  }
+  .img-wrapper{
+    justify-content: space-between;
+  }
+  .burger-component-wrapper{
+    display: block;
+  }
 }
 

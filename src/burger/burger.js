@@ -1,8 +1,25 @@
 import React,{useState} from "react";
 import './burger.scss';
-import   index1 from  "../Image/logo.png"
 
-function  Burger() {
+
+function  Burger({op, style}) {
+    const secondLvlStyle = {
+        hid:{
+            overflow:"hidden",
+            height:"0",
+            width:"100%",
+            transition: "height 300ms ease-in-out",
+
+        },
+        vis:{
+            height:"4.5rem",
+            overflow: "hidden",
+            width: "100%",
+            transition:"height 300ms ease-in-out"
+        }
+
+    }
+
     const [ open, setOpen] = useState(
         [
 
@@ -39,8 +56,6 @@ function  Burger() {
             flag :false,
             item2 : [
 
-
-
             ]
         },
         {
@@ -73,7 +88,7 @@ function  Burger() {
 
     const handle = (id) => (
         setOpen([...open.map((item)=> (
-         item.l === id ? {...item, flag: !item.flag} : {...item}
+                item.l === id ? {...item, flag: !item.flag} : {...item}
             )
 
         )])
@@ -82,7 +97,7 @@ function  Burger() {
     )
 
     const li = open.map((item )=>  (
-        <li className="first-lvl1" key={item.l} onClick={()=>handle(item.l)}>
+        <li className="first-lvl1" key={item.l} onClick={()=>handle(item.l)} >
 
             <div className="first-lvl1-item">
                  <p className="first-lvl1-item-name">
@@ -90,16 +105,19 @@ function  Burger() {
                  </p>
                 <i className="bi bi-chevron-compact-down1"> </i>
 
-            <ul className="second-lvl-wrapper1" style={item.flag?{display:"none"}:{display:"block"}} >
+            <ul className="second-lvl-wrapper1"   >
+                <div className="m" style={item.flag?secondLvlStyle.vis:secondLvlStyle.hid} >
                 {item.item2.map((item2)=>(
+                       <div className="hj"  >
+                           <li className={item.flag?"one-list":"two-list"} key={item.l} >
+                               {item2.item2}
+                           </li>
+                       </div>
 
-                        <li className="second-lvl1" key={item2.id2}>
-
-                            {item2.item2}
-                        </li>
 
                     )
                 )}
+                </div>
             </ul>
             </div>
         </li>
@@ -110,8 +128,10 @@ function  Burger() {
 console.log(open)
 
     return (
-        <div className="burger-wrapper">
-                  <ul className="ul-list-burger">
+        <div className="burger-wrapper" style={op
+            ?style.visibilit
+            :style.hidd}>
+                  <ul className="ul-list-burger" >
                       {li}
                   </ul>
         </div>
